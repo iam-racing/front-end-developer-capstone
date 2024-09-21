@@ -1,0 +1,17 @@
+.container-testimonials {
+    font-family: "Markazi Text", serif;
+    background-color: #D9D9D9;
+    padding-bottom: 5%;
+}
+
+.container-testimonials h1 {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 56px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: 1fr;
+}

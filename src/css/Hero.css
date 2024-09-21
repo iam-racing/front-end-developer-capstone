@@ -1,0 +1,53 @@
+.container-hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 1fr;
+    background-color: #495E57;
+    font-family: "Markazi Text", serif;
+}
+
+.col-1 {
+    margin-left: 5%;
+}
+
+.col-2 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container-hero h1 {
+    font-size: 56px;
+    color: #F4CE14;
+    margin-bottom: 0%;
+}
+
+.container-hero h2 {
+    font-size: 40px;
+    color: white;
+    margin-top: 0%;
+}
+
+.container-hero p {
+    font-size: 24px;
+    color: white;
+}
+
+.container-hero button {
+    background-color: #F4CE14;
+    font-family: "Markazi Text", serif;
+    font-size: 24px;
+    height: 60px;
+    width: auto;
+    border-radius: 16px;
+    border: none;
+    margin-bottom: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container-hero img {
+    margin: 5%;
+    width: auto;
+    height: 100%;
+    border-radius: 16px;
+}
