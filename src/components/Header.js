@@ -6,7 +6,7 @@ const Header = () => (
     <img className="logo-header" src={ logo } alt="Little lemon restaurant logo."/>
     <nav className="nav-bar">
       <ul>
-        <li><a href="/home">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/menu">Menu</a></li>
         <li><a href="/reservation">Reservations</a></li>
