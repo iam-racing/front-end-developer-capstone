@@ -10,8 +10,10 @@ const BookingForm = (props) => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.submitForm({ date, time, guests, occasion });
+    console.log(!date)
     console.log({ date, time, guests, occasion });
+    props.submitForm({ date, time, guests, occasion });
+    
   };
 
   const handleDateChange = (e) => {
@@ -31,6 +33,7 @@ const BookingForm = (props) => {
         aria-label="Reservation date"
         aria-required="true"
       />
+      { !date && <p style={{ color: 'red' }}>{"Please provide a date."}</p>} {/* Error message for date */}
 
       <label htmlFor="res-time">Choose time</label>
       <select 
@@ -69,7 +72,7 @@ const BookingForm = (props) => {
         <option value="Anniversary">Anniversary</option>
       </select>
 
-      <input type="submit" value="Make Your reservation" aria-label="Submit reservation form"/>
+      <input type="submit" disabled={ date == "" } value="Make Your reservation" aria-label="Submit reservation form"/>
     </form>
   );
 };
