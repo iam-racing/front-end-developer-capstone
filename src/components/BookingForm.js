@@ -10,6 +10,7 @@ const BookingForm = (props) => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    props.submitForm({ date, time, guests, occasion });
     console.log({ date, time, guests, occasion });
   };
 
